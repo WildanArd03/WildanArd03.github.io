@@ -113,7 +113,7 @@
                   <img src="assets/img/project/ac.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Auto Calculated</h4>
-                    <a href="project/autocalculated.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Project Details"><i class="bx bx-link"></i></a>
+                    <a href="#" data-gall="portfolioDetailsGallery" class="details-link" data-toggle="modal" data-target="#autocal" ><i class="bx bx-link"></i></a>
                   </div>
                 </div>
       
@@ -121,7 +121,7 @@
                   <img src="assets/img/project/dom.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>DOMPDF Laravel</h4>
-                    <a href="project/dompdf.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Project Details"><i class="bx bx-link"></i></a>
+                    <a href="#" data-gall="portfolioDetailsGallery" class="details-link" data-toggle="modal" data-target="#dompdf" ><i class="bx bx-link"></i></a>
                   </div>
                 </div>
       
@@ -129,7 +129,7 @@
                   <img src="assets/img/project/edit.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Form Edit Laravel</h4>
-                    <a href="project/form-edit.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Project Details"><i class="bx bx-link"></i></a>
+                    <a href="#" data-gall="portfolioDetailsGallery" class="details-link" data-toggle="modal" data-target="#formedit" ><i class="bx bx-link"></i></a>
                   </div>
                 </div>
       
@@ -137,7 +137,7 @@
                   <img src="assets/img/project/opencv.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Install Opencv</h4>
-                    <a href="project/install-opencv.html  " data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Project Details"><i class="bx bx-link"></i></a>
+                    <a href="#" data-gall="portfolioDetailsGallery" class="details-link" data-toggle="modal" data-target="#installopencv" ><i class="bx bx-link"></i></a>
                   </div>
                 </div>
       
@@ -145,7 +145,7 @@
                   <img src="assets/img/project/detect.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Detect Wajah & Mata</h4>
-                    <a href="project/detect-wajah-mata.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Project Details"><i class="bx bx-link"></i></a>
+                    <a href="#" data-gall="portfolioDetailsGallery" class="details-link" data-toggle="modal" data-target="#dwajahmata" ><i class="bx bx-link"></i></a>
                   </div>
                 </div>
       
@@ -153,7 +153,7 @@
                   <img src="assets/img/project/lingkar.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Detect Lingkaran</h4>
-                    <a href="project/detect-lingkaran.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Project Details"><i class="bx bx-link"></i></a>
+                    <a href="#" data-gall="portfolioDetailsGallery" class="details-link" data-toggle="modal" data-target="#dlingkaran" ><i class="bx bx-link"></i></a>
                   </div>
                 </div>
 
@@ -279,6 +279,128 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+
+<!-- Modal -->
+<div class="modal fade" id="autocal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <?php
+          include 'project/autocalculated.html'
+          ?>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-warning text-light" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="dompdf" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <?php
+          include 'project/dompdf.html'
+          ?>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-warning text-light" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="dwajahmata" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <?php
+          include 'project/detect-wajah-mata.html'
+          ?>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-warning text-light" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="dlingkaran" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <?php
+          include 'project/detect-lingkaran.html'
+          ?>
+      </div>
+      <div class="modal-footer">
+       <button type="button" class="btn btn-warning text-light" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="formedit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <?php
+          include 'project/form-edit.html'
+          ?>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-warning text-light" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="installopencv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <?php
+          include 'project/install-opencv.html'
+          ?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning text-light" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End modal -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
